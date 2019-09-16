@@ -1,2 +1,2 @@
 #!/bin/bash
-set Holberton="Betty"
+Holberton=Betty
