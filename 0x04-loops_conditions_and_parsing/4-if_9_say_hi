@@ -6,9 +6,11 @@ while [ $a -lt 10 ]
 do
 	if [ $a -eq 8 ]
 	then
-		echo "Hi"
+	    echo "Holberton School"
+	    echo "Hi"
 	else
-		echo "Holberton School"
+	    echo "Holberton School"
+
 	fi
         ((a++))
 done
