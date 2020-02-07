@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Clock"
+
+HORAS=0
+while [ $HORAS -le 12 ]
+do
+    echo "Hour: $HORAS"
+    MINUTOS=1
+    while [ $MINUTOS -le 59 ]
+    do
+	echo $MINUTOS
+	((MINUTOS++))
+    done
+    ((HORAS++))
+done
