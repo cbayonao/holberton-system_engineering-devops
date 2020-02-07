@@ -1,21 +1,25 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 
-a=0
-while [ $a -lt 20 ]
+a=1
+while [ $a -lt 21 ]
 do
-    echo $a
-    if [ $a -eq 4 ]
-    then
-	echo "bad luck from China"
-    elif [ $a -eq 9 ]
-    then
-	echo "bad luck from Japan"
-    elif [ $a -eq 17 ]
-    then
-	echo "bad luck from Italy"
-    else
-	echo $a
-    fi
+    case $a in
+	4)
+	    echo $a
+	    echo "bad luck from China"
+	    ;;
+	9)
+	    echo $a
+	    echo "bad luck from Japan"
+	    ;;
+	17)
+	    echo $a
+	    echo "bad luck from Italy"
+	    ;;
+	*)
+	    echo $a
+	    ;;
+	esac
     ((a++))
 done
