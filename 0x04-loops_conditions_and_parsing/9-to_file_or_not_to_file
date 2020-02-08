@@ -2,7 +2,7 @@
 # Script that gives you information about the holbertonschool file.
 
 FILE="holbertonschool"
-if [ -f $file ] || [ -d $file ];
+if [ -f "$FILE" ] || [ -d "$FILE" ];
 then
     echo "$FILE file exists"
     if test -s "$FILE";
