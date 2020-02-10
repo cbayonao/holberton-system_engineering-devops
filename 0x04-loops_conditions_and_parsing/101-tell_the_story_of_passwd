@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This displays the storie of the file /etc/passwd.
 
+
 FILE="/etc/passwd"
 while IFS="" read -r username password uid gid uidinfo home_d com_s
 do
