@@ -19,6 +19,6 @@ backend web-server
 "
 
 echo "$FRONTEND" >> /etc/haproxy/haproxy.cfg
-eccho "$BACKEND" >> /etc/haproxy/haproxy.cfg
+echo "$BACKEND" >> /etc/haproxy/haproxy.cfg
 echo "ENABLED=1" >> /etc/default/haproxy
 service haproxy start
