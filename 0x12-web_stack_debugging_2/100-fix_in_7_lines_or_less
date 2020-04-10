@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Using what you did for task #1, make your fix short and sweet.
+pkill apache2
+chown nginx:nginx /etc/nginx/nginx.conf
+chmod 755 /etc/nginx/nginx.conf
+sed -i 's/\b80\b/&80/' /etc/nginx/sites-available/default
+sudo -u nginx service nginx start
