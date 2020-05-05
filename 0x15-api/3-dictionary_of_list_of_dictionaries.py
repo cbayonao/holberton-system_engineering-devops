@@ -16,6 +16,5 @@ if __name__ == '__main__':
                               "username": j.get("username")} for i in rtodos
                              if i.get("userId") == j.get("id")]
                for j in rusers}
-    print(type(my_dict))
     with open("todo_all_employees.json", "w") as jsonfile:
         json.dump(my_dict, jsonfile)
