@@ -4,6 +4,7 @@ import requests
 and returns the number of subscribers (not active
 users, total subscribers) for a given subreddit."""
 
+
 def number_of_subscribers(subreddit):
     """
     Method for retrieves number of subcribers of a subreddit
