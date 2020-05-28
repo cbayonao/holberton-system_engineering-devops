@@ -1,10 +1,5 @@
-# Increase max open files
+# Repair Ngnix
 exec { 'repair NGINX':
-  command => "sed -i 's/15/4096/g' /etc/default/nginx",
-  path    => '/bin/',
-}
-
-service { 'repair NGINX':
-  ensure    => running,
-  subscribe => Exec['/etc/default/nginx'],
+  command => 'sudo sed -i "s/15/4096/g" /etc/default/nginx; sudo service nginx restart',
+  path    => ['/usr/bin', '/bin'],
 }
