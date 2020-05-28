@@ -4,7 +4,7 @@ exec { 'repair NGINX':
   path    => '/bin/',
 }
 
-service { 'repair NGINX':
+service { 'nginx':
   ensure    => running,
   subscribe => Exec['/etc/default/nginx'],
 }
